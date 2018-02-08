@@ -1,0 +1,33 @@
+Setup required:
+- var for user start location
+- var for treasure location
+  - not the same!
+  - randomize
+- var for user current location
+- game board
+  - var for each block
+  - track by x & y
+- vars for direction (N, E, W, S)
+- var for previous user location
+- var for username
+-  var treasureFound = false
+
+Game play:
+- Start with a prompt, telling user about adventure
+ - collect their name
+- while !treasureFound
+  - ask what direction
+  - tell user if treausre is in their new location
+  - check that they're entered a valid direction
+  - tell them if they're closer to treasure
+  - only prompt for valid directions
+  - make sure their move is still within the grid
+  - do math, figue user's current location
+    -(change x or y value)
+
+How does game end:
+- user enters treasure's location
+  - treasureFound = true
+  - output to user, tell them they won!
+  - give option to retry
+  - reset vars to starting value
